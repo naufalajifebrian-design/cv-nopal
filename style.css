@@ -1370,5 +1370,49 @@ nav a{
     grid-template-columns:repeat(2,1fr);
     gap:15px;
 }
+.menu-toggle{
+    display:none;
+}
 
+@media (max-width:768px){
+
+header{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 20px;
+}
+
+.logo{
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:28px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+#darkMode{
+    position:static;
+}
+
+nav{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:15px;
+    margin-top:15px;
+    text-align:center;
+}
+
+nav.show{
+    display:flex;
+}
 }
