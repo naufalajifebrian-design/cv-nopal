@@ -271,3 +271,15 @@ menuToggle.addEventListener("click",()=>{
     navbar.classList.toggle("show");
 
 });
+const homeBtn = document.querySelector('a[href="#beranda"]');
+
+homeBtn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
