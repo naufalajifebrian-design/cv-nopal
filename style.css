@@ -1362,5 +1362,13 @@ nav a{
     width:45px;
     height:45px;
 }
+.hero{
+    margin-top:25px;
+}
+.stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
 
 }
