@@ -1391,28 +1391,46 @@ header{
     margin-bottom:10px;
 }
 
-.menu-toggle{
-    display:block;
-    font-size:28px;
-    border:none;
-    background:none;
-    cursor:pointer;
+header{
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:auto;
 }
 
-#darkMode{
-    position:static;
+.logo h2{
+    font-size:18px;
 }
 
 nav{
-    display:none;
     width:100%;
-    flex-direction:column;
-    gap:15px;
-    margin-top:15px;
-    text-align:center;
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    justify-content:flex-start;
+    padding:10px 0;
+    scrollbar-width:none;
 }
 
-nav.show{
-    display:flex;
+nav::-webkit-scrollbar{
+    display:none;
 }
+
+nav a{
+    white-space:nowrap;
+    flex-shrink:0;
+}
+
+#darkMode{
+    position:fixed;
+    right:15px;
+    bottom:20px;
+    z-index:9999;
+}
+
+.container{
+    margin-top:130px;
+}
+
 }
